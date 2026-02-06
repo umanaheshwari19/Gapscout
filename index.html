@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GapScout – Interview Readiness Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>GapScout</h1>
+    <p class="subtitle">Check your interview readiness in under 2 minutes⏱️</p>
+
+    <form id="assessmentForm">
+      <div class="question">
+        <label>1. How confident are you in your technical skills? (1–5)</label>
+        <input type="number" id="tech" min="1" max="5" required />
+      </div>
+
+      <div class="question">
+        <label>2. Do you have a well-structured resume?</label>
+        <select id="resume" required>
+          <option value="">Select</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>3. How comfortable are you explaining your projects? (1–5)</label>
+        <input type="number" id="comm" min="1" max="5" required />
+      </div>
+
+      <div class="question">
+        <label>4. How many projects have you completed?</label>
+        <select id="projects" required>
+          <option value="">Select</option>
+          <option value="0">0</option>
+          <option value="1">1–2</option>
+          <option value="2">3 or more</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <label>5. How confident do you feel overall for interviews? (1–5)</label>
+        <input type="number" id="confidence" min="1" max="5" required />
+      </div>
+
+      <button type="submit">Check My Readiness</button>
+    </form>
+
+    <div id="result" class="result hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
